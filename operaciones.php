@@ -9,6 +9,15 @@ function restar($a, $b) {
     return $a - $b;
 }
 
+// Función para dividir dos números
+function dividir($a, $b) {
+    if ($b == 0) {
+        return "No se puede dividir por cero";
+    } else {
+        return $a / $b;
+    }
+}
+
 // Definir dos números
 $num1 = 10;
 $num2 = 5;
@@ -17,4 +26,5 @@ $num2 = 5;
 echo "Suma de $num1 y $num2: " . sumar($num1, $num2) . "\n";
 
 echo "Resta de $num1 y $num2: " . restar($num1, $num2) . "\n";
+echo "División de $num1 y $num2: " . dividir($num1, $num2) . "\n";
 ?>
